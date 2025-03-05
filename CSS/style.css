@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Street;
+    src: url(../Font/street.otf);
+}
+
+:root {
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Street;
+    color: crimson;
+    size: 46px;
+}
+
+
+table {
+    height: 800px;
+    width: 600px;
+    border-color:rgb(237, 175, 5);
+    border-width: 10px;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+}
+
+#cabecera_tabla {
+    background-image: url(../img/fondocabecera.jpg);
+    background-size:cover;
+    font-family: Street;
+    font-size: 40px;
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+td {
+    height: 45px;
+    width: 40px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+}
+img{
+    margin-top: -10px;
+    height: max-content;
+    width: min-content;
+}
+
+h2 {
+    font-family: Street;
+    color: crimson;
+    font-size: 28px;
+}
+
+form {
+    height: 1100px;
+    width: 600px;
+    border: 10px outset rgb(237, 175, 5);
+    color:white;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+.boton {
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: Street;
+    font-size: 18px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+
+div {
+    border: 2px solid grey;
+    margin: 20px 5px;
+    text-align: left;
+}
+
+.campos_form {
+    display: list-item;
+    text-align: left;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.campos_unidos{
+    display:flexbox;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+#campos_sexo {
+    display:list-item;
+}
+
+legend{
+    font-family: Street;
+    size: 14px;
+    color: rgb(237, 175, 5);
+    margin-top: -20px;
+    margin-left: 10px;
+    background-color:black;
+    width:fit-content;
+}
+
+textarea {
+    width: 560px;
+    height: 200px;
+}

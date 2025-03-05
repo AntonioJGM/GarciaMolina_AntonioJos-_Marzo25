@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StreetFighter-UNIR</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/arcade.png" type="image/x-icon">
+</head>
 </head>
 <body>
-    
+    <h1>TO LIVE IS TO FIGHT, TO FIGHT IS TO LIVE</h1>
+
+    <table>
+        <tr>
+            <td id="cabecera_tabla" colspan="4">Street Fighter</td>
+        </tr>
+        <tr>
+            <td>
+                <p>KEN</p>
+                <img src="img/ken.png" alt="KEN">
+            </td>
+            <td>
+                <p>CHUN LI</p>
+                <img src="img/ChunLi.png" alt="CHUN LI">
+            </td>
+            <td>
+                <p>ZANGIEF</p>
+                <img src="img/Zangief.png" alt="ZANGIEF">
+            </td>
+            <td>
+                <p>DHALSIN</p>
+                <img src="img/Dhalsim.png" alt="DHALSIN">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>RYU</p>
+                <img src="img/Ryu.png" alt="RYU">
+            </td>
+            <td>
+                <p>E HONDA</p>
+                <img src="img/EHonda.png" alt="E HONDA">
+            </td>
+            <td>
+                <p>BLANKA</p>
+                <img src="img/Blanka.png" alt="BLANKA">
+            </td>
+            <td>
+                <p>GUILLE</p>
+                <img src="img/Guille.png" alt="GUILLE">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>T HAWK</p>
+                <img src="img/THawk.png" alt="T HAWK">
+            </td>
+            <td>
+                <p>FEILONG</p>
+                <img src="img/Feilong.png" alt="FEILONG">
+            </td>
+            <td>
+                <p>DEE JAY</p>
+                <img src="img/DeeJay.png" alt="DEE JAY">
+            </td>
+            <td>
+                <p>CAMMY</p>
+                <img src="img/Cammy.png" alt="CAMMY">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>BALROG</p>
+                <img src="img/Balrog.png" alt="BALROG">
+            </td>
+            <td>
+                <p>VEGA</p>
+                <img src="img/Vega.png" alt="VEGA">
+            </td>
+            <td>
+                <p>SAGAT</p>
+                <img src="img/Sagat.png" alt="SAGAT">
+            </td>
+            <td>
+                <p>M BISON</p>
+                <img src="img/MBison.png" alt="M BISON">
+            </td>
+        </tr>
+    </table>
+
+    <h2>FORMULARIO DE INSCRIPCIÓN PARA JUGAR A STREET FIGHTER</h2>
+
+    <!--el enunciado no dice donde manar el formulario, pongo mi correo-->
+    <form action="antoniojgmolina99@gmail.com" name="Formulario" method="post">
+
+        <div>
+            <legend>DATOS PERSONALES</legend>
+            <label class="campos_form" for="nombre">Nombre:</label>
+            <input class="campos_form" type="text" id="nombre" name="nombre">
+        
+            <label class="campos_form" for="apellido">Apellidos:</label>
+            <input class="campos_form" type="text" id="apellido" name="apellido">
+            
+            <label class="campos_form" for="direccion">Dirección Postal:</label>
+            <input class="campos_unidos" type="text" id="direccion" name="Calle">
+            <input class="campos_unidos" type="text" id="direccion" name="Nº">
+            <input class="campos_unidos" type="text" id="direccion" name="Piso">
+            <input class="campos_unidos" type="text" id="direccion" name="Cod. Postal">
+            <input class="campos_unidos" type="text" id="direccion" name="Ciudad">
+
+            <label class="campos_form" for="Nick">Nick:</label>
+            <input class="campos_form" type="text" id="Nick" name="Nick">
+
+            <label class="campos_form" for="Correo electronico">Correo electrónico:</label>
+            <input class="campos_form" type="email" id="Correo electronico" name="Correo electronico">
+        </div>
+        <div id="campos_sexo">
+            <legend>SEXO USUARIO</legend>
+            <label class="campos_sexo" for="sexo"></label>
+            <input class="campos_sexo" type="radio" id="sexo" value="Hombre">Hombre
+            <input class="campos_sexo" type="radio" id="sexo" value="Mujer">Mujer
+            <input class="campos_sexo" type="radio" id="sexo" value="Prefiero No Decir">Prefiero No Decir
+        </div>
+        <div>
+            <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento">
+        </div>
+
+        <div>
+            <legend>PERSONAJES</legend>
+            Selecciona el personaje:<input list="Personajes" placeholder="Personaje">
+            <datalist id="Personajes">
+                <option value="KEN">KEN</option>
+                <option value="CHUN LI">CHUN LI</option>
+                <option value="ZANGIEF">ZANGIEF</option>
+                <option value="DHALSIN">DHALSIN</option>
+                <option value="RYU">RYU</option>
+                <option value="Otros personajes">Otros personajes</option>
+            </datalist>
+        </div>
+        <div>
+            <legend>COMENTARIOS</legend>
+            <textarea name="Comentario" placeholder="Escribe aquí..."></textarea>
+        </div>
+
+        <input class="boton" type="submit" value="enviar">
+        <input class="boton" type="reset" value="Borrar">
+    </form>
+
 </body>
 </html>
